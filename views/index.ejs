@@ -8,13 +8,7 @@
     <title>Document</title>
 </head>
 <body style="background-color: rgb(231, 231, 231);">
-    <h1>Featured Items</h1>
-    <% for(let i = 0; i < closet.length; i++) { %>
-        <a href="http://localhost:3000/closet/<% i %>">
-        <h3>Title: <%= closet[i].title %></h3>
-        </a>
-        <hr>
-    <% } %>
+    
     <header>
     <nav class="navigation">
         <div class="list"><a href="/closet/new">List Item</a></div>
@@ -22,7 +16,19 @@
         <button class="Log-in"></button>
     </nav>
     </header>
+<h1>Featured Items</h1>
 
+    <% for(let i = 0; i < closet.length; i++) { %>
+    <div class="items">
+        <a href="http://localhost:3000/closet/show<% i %>">
+        <img src=<%= closet[i].img %> alt="closet pic" width="288px">
+        <h3>Title: <%= closet[i].title %></h3>
+        <h3>Description: <%= closet[i].description %></h3>
+        <h3>Size: <%= closet[i].size %></h3>
+        <h3>$<%= closet[i].price %></h3>
+        </a>
+    <% } %>
+</div>
 <div class="wrapper">
     <div class="form-box login">
         <h2>Login</h2>

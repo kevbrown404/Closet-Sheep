@@ -20,19 +20,19 @@ app.get("/closet/new", (req, res)=>{
 })
 
 // EDIT 
-app.get("/closet/edit/:id", async (req, res)=>{
+app.put("/closet/edit/:id", async (req, res)=>{
     res.render("edit.ejs", {closet})
 })
 
 // SHOW 
 app.get("/closet/:id", (req, res)=>{
-   const clothing = clothing(req.params.id);
-   res.render("closet/show.ejs", {clothing})
+   // const closet = closet(req.params.id);
+   res.render("show.ejs", {closet})
 })
 
 // DELETE
 app.delete("/closet/:id", async (req, res)=>{
-    const clothing = await Clothing.findByIdAndDelete(req.params.id)
+    const listing = await Listing.findByIdAndDelete(req.params.id)
     res.redirect("/closet")
 })
 

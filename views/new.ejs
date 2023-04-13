@@ -21,22 +21,28 @@
             <div class="form-box new">
                 <h2>New Listing</h2>
                 <form action="#">
-                  <input type="title" required>
                   <label>Title:</label>
+                  <input type="title" required>
             </div>
             <div class="input-box">
-                  <input type="description" required>
-                  <label>Description:</label>
+                <label>Description:</label>  
+                <input type="description" required>
             </div>  
-            <div class="input-box">
-                <input type="size" required>
+            <div class="input-box">                
                 <label>Size:</label>
+                <input type="size" required>
+          </div>  
+          <div class="input-box">           
+            <label>Price:</label>
+            <input type="price" required>
           </div>  
           <div class="input-box">
-            <input type="price" required>
-            <label>Price:</label>
-          </div>  
+            <label>img URL:</label>
+            <input type="img" required>
+          </div>
+          <form action="http://localhost:3000/closet/new">
             <button type="submit" class="btn">Create Listing</button>
+          </form> 
           </div>
 </body>
 </html>

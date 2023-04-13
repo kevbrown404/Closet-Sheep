@@ -7,11 +7,26 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" >
     <title>Document</title>
 </head>
-<body>
-    <h1>Title: <% clothing.title %></h1>
-    <h1>Description: <% clothing.description %></h1>
-    <h1>Size: <% clothing.size %></h1>
-    <h1>Price: <% clothing.price %></h1>
-    <a href=""
+<body style="background-color: rgb(231, 231, 231);">
+    <header>
+        <nav class="navigation">
+            <div class="list"><a href="/closet/new">List Item</a></div>
+            <div class="logo"><a href="/closet"><img src="https://i.ibb.co/9hcwcCg/Closet-Sheep-1.png" alt="Closet-Sheep-1" width="100" height="100"></a></div>
+            <button class="Log-in"></button>
+        </nav>
+    </header>
+    <% { %>
+    <h3>Title: <% let closetTitle = closet.title %>
+        <% for(const title in closetTitle) { %>
+            <%= title %>: <%= closetTitle[title] %>
+        <% } %>
+    </h3>
+    <h3>Description: <%= closet.description %>
+    </h3>
+    <h3>Size: <%= closet.size %>
+    </h3>
+    <h3>Price: <%= closet.price %>
+    </h3>
+    <% } %>
 </body>
 </html>
