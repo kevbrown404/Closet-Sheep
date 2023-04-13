@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" >
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(231, 231, 231);">
+    <h1>Featured Items</h1>
+    <% for(let i = 0; i < closet.length; i++) { %>
+        <a href="http://localhost:3000/closet/<% i %>">
+        <h3>Title: <%= closet[i].title %></h3>
+        </a>
+        <hr>
+    <% } %>
+    <header>
+    <nav class="navigation">
+        <div class="list"><a href="/closet/new">List Item</a></div>
+        <div class="logo"><a href="/closet"><img src="https://i.ibb.co/9hcwcCg/Closet-Sheep-1.png" alt="Closet-Sheep-1" width="100" height="100"></a></div>
+        <button class="Log-in"></button>
+    </nav>
+    </header>
+
+<div class="wrapper">
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <input type="email" required>
+          <label>Email</label>
+    </div>
+    <div class="input-box">
+          <input type="password" required>
+          <label>Password</label>
+    </div>  
+    <button type="submit" class="btn">Sign Up!</button>
+
+    </form>
+</div>
+
+</body>
+</html>

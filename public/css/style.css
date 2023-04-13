@@ -1,0 +1,76 @@
+.wrapper {
+    position: fixed;
+    width: 401px;
+    height: 360px;
+    background: transparent;
+    border: 0px solid gray;
+    border-radius: 20px;
+    backdrop-filter: blur(22px);
+    box-shadow: 0 0 30px black;
+    display: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.navigation {
+    background-color: white;
+    padding-top: 100px;
+}
+.Log-in {
+    background-image: url("https://i.ibb.co/yY7YGB9/Closet-Sheep-2.png");
+    background-size: cover;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 41px;
+    top: 31px;
+}
+
+.logo {
+    position: fixed;
+    bottom: 507px;
+    background-size: cover;
+    border: none;
+    width: 80px;
+    height: 66px;
+    position: fixed;
+    right: 41px;
+    top: 8px;
+    left: 400px;
+    text-decoration: none;
+    
+}
+
+.list {
+    position: fixed;
+    bottom: 490px;
+    background-size: cover;
+    border: none;
+    width: 65px;
+    height: 50px;
+    position: fixed;
+    right: 41px;
+    top: 50px;
+    left: 40px;
+    text-decoration: none;
+}
+
+.new-post {
+    position: fixed;
+    width: 401px;
+    height: 360px;
+    right: 250px;
+    top: 200px;
+    background: transparent;
+    border: 0px solid gray;
+    border-radius: 20px;
+    backdrop-filter: blur(22px);
+    box-shadow: 0 0 30px black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
