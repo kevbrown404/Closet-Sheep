@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" >
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(231, 231, 231);">
+    
+    <header>
+    <nav class="navigation">
+        <div class="list"><a href="/closets/new">List Item</a></div>
+        <div class="logo"><a href="/users"><img src="https://i.ibb.co/9hcwcCg/Closet-Sheep-1.png" alt="Closet-Sheep-1" width="100" height="100"></a></div>
+        <div class = "loginbtn">
+            <a href = "#">Login |</a> <a href="#">Sign Up</a>
+            <div class="arrow-up"></div>
+            <form action = "POST">
+                <h3>Login Form</h3>
+                <input type="text" placeholder="username">
+                <input type="password" placeholder="password">
+                <button onclick="">Login</button>
+            </form>
+    </nav>
+    </header>
+<h1>Featured Closets</h1>
+
+<% console.log(users) %>
+
+<ul class="usersIndex">
+    <% for(let i = 0; i < users.length; i++) {
+        let userNumber = i + 1
+        %>
+
+    <li>
+        <a class="usersIndexLink" href="/closets/user/<%= users[i].id %>"> <%= users[i].firstName %> <%= users[i].lastName %> </a>
+        
+    </li>   
+
+   <% } %>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+    "env": {
+        "DB_USER": "kevinb122356",
+        "DB_PASSWORD": "x4ttAUXSfXIMQMcw",
+        "JWT_KEY_SECRET": "closet_sheep"
+    }
+}

@@ -1,7 +1,6 @@
 h1 {
     text-align: center;
 }
-
 .wrapper {
     position: fixed;
     width: 401px;
@@ -19,7 +18,6 @@ h1 {
 }
 .navigation {
     background-color: white;
-    padding-top: 100px;
 }
 .Log-in {
     background-image: url("https://i.ibb.co/yY7YGB9/Closet-Sheep-2.png");
@@ -29,36 +27,18 @@ h1 {
     height: 50px;
     position: fixed;
     right: 41px;
-    top: 31px;
+    top: 50px;
 }
 
 .logo {
-    position: fixed;
-    bottom: 507px;
-    background-size: cover;
-    border: none;
-    width: 80px;
-    height: 66px;
-    position: fixed;
-    right: 41px;
-    top: 8px;
-    left: 400px;
-    text-decoration: none;
-    
+    display: flex;
+    justify-content: center;
 }
 
 .list {
-    position: fixed;
-    bottom: 490px;
-    background-size: cover;
-    border: none;
-    width: 65px;
-    height: 50px;
-    position: fixed;
-    right: 41px;
+    position: relative;
     top: 50px;
     left: 40px;
-    text-decoration: none;
 }
 
 .new-post {
@@ -86,4 +66,24 @@ h1 {
     display: flex;
     text-decoration-color: black;
     text-decoration: none;
+}
+
+.loginbtn {
+    position: absolute;
+    right: 50px;
+    width: 250px;
+    height: 250px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+form {
+    position: absolute;
+    right: 50px;
+    width: 250px;
+    height: 250px;
+    background: white;
+    border-radius: 20px;
+    margin-top: 40px;
 }
