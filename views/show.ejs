@@ -15,12 +15,21 @@
             <button class="Log-in"></button>
         </nav>
     </header>
-    <% for(let i = 0; i < users.length; i++) { %>
-        <img src=<%= listing .img %> alt="listing pic" width="288px">
-        <h3>Title: <%= listing.title %></h3>
-        <h3>Description: <%= listing.description %></h3>
-        <h3>Size: <%= listing.size %></h3>
-        <h3>$<%= listing.price %></h3>
-    <% } %>
+   
+     <h3>
+       <%= user.firstName %>
+    </h3>
+    <h3>
+       <%= user.lastName %>
+       </h3>
+       <h3>
+       <%= user.email %>
+     </h3>
+    <button class="edit">
+        <a href="/users/new/<%= id %>/edit">Edit</a>
+    </button>
+    <form action="/users/new/<%= id %>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete"/>
+      </form>
 </body>
 </html>

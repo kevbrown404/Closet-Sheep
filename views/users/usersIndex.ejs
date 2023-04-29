@@ -14,7 +14,7 @@
         <div class="list"><a href="/closets/new">List Item</a></div>
         <div class="logo"><a href="/users"><img src="https://i.ibb.co/9hcwcCg/Closet-Sheep-1.png" alt="Closet-Sheep-1" width="100" height="100"></a></div>
         <div class = "loginbtn">
-            <a href = "#">Login |</a> <a href="#">Sign Up</a>
+            <a href = "#">Login |</a> <a href="users/new">Sign Up</a>
             <div class="arrow-up"></div>
             <form action = "POST">
                 <h3>Login Form</h3>
@@ -34,7 +34,8 @@
         %>
 
     <li>
-        <a class="usersIndexLink" href="/closets/user/<%= users[i].id %>"> <%= users[i].firstName %> <%= users[i].lastName %> </a>
+        <a class="usersIndexLink" href="/users/new/<%= users[i]._id %>"> 
+            <%= users[i].firstName %> <%= users[i].lastName %> </a>
         
     </li>   
 
